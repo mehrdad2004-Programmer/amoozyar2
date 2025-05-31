@@ -13,13 +13,14 @@ return new class extends Migration
     {
         Schema::create('fa_reg_info', function (Blueprint $table) {
             $table->id();
-            $table->string('fa_work_address');
+            $table->string('fa_fname');
             $table->string('fa_lname');
             $table->string('fa_job');
+            $table->string('fa_work_address');
             $table->string('fa_phone');
             $table->string('fa_id_no');
             $table->string('fa_education');
-            $table->string('fa_fname');
+            $table->string("st_id_no");
             $table->timestamps();
         });
     }

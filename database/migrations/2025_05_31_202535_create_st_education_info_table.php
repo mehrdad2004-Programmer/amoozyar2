@@ -13,14 +13,11 @@ return new class extends Migration
     {
         Schema::create('st_education_info', function (Blueprint $table) {
             $table->id();
-
-            $table->unsignedBigInteger('st_reg_info_id');
-            $table->string('school_name');
-            $table->string('degree');
-            $table->string('major');
-            $table->date('graduation_date')->nullable();
+            $table->string('last_school');
+            $table->string('last_avrage');
+            $table->string('last_enzebat');
+            $table->date('last_karname');
             $table->timestamps();
-            $table->foreign('st_reg_info_id')->references('id')->on('st_reg_info')->onDelete('cascade');
         });
     }
 

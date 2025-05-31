@@ -20,12 +20,12 @@ return new class extends Migration
             $table->string('st_birth_place');
             $table->string('st_grade');
             $table->string('st_field');
-            $table->string('st_exp_place')->nullable();
+            $table->string('st_exp_place');
             $table->string('st_series');
             $table->string('st_fname');
             $table->string('st_phone');
-            $table->string('st_telephone')->nullable();
-            $table->string('st_personal_pic')->nullable();
+            $table->string('st_telephone');
+            $table->string('st_personal_pic');
             $table->string('st_address');
 
             $table->timestamps();
