@@ -16,7 +16,8 @@ return new class extends Migration
             $table->string('last_school');
             $table->string('last_avrage');
             $table->string('last_enzebat');
-            $table->date('last_karname');
+            $table->string('last_karname');
+            $table->string('st_id_no');
             $table->timestamps();
         });
     }

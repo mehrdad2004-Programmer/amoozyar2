@@ -13,20 +13,26 @@ return new class extends Migration
     {
         Schema::create('st_reg_info', function (Blueprint $table) {
             $table->id();
+            $table->string('st_fname');
             $table->string('st_lname');
             $table->string('st_faname');
             $table->string('st_id_no');
-            $table->date('st_birth_date');
-            $table->string('st_birth_place');
-            $table->string('st_grade');
-            $table->string('st_field');
-            $table->string('st_exp_place');
             $table->string('st_series');
-            $table->string('st_fname');
+            $table->date('st_birthdate');
+            $table->string('st_birthplace');
+            $table->string('st_id_card_exportion');
             $table->string('st_phone');
-            $table->string('st_telephone');
+            $table->string('st_home_phone');
             $table->string('st_personal_pic');
             $table->string('st_address');
+            $table->string('st_field');
+            $table->string('st_grade');
+            $table->string('st_group');
+            $table->string('request_date');
+            $table->string('mianpaye')->default("0");
+            $table->string('st_reg_code');
+            $table->string('st_condition')->default("0");
+            $table->string('status')->default("0");
 
             $table->timestamps();
         });
